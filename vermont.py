@@ -248,8 +248,11 @@ def level_print(level, search_input):
             case 'Kingdom':
                 for indvidual in animal_catalogue:
                     if (animal_catalogue[indvidual].get_kingdom() == search_input):
+                        count += 1
+                for indvidual in animal_catalogue:
+                    if (animal_catalogue[indvidual].get_kingdom() == search_input):
                         if first:
-                            print('There are _ living members in the {} {}\n'.format(search_input, level))
+                            print('There are {} living members in the {} {}\n'.format(count, search_input, level))
                             print("###########################################")
                             print(animal_catalogue[indvidual])
                             first = False
@@ -259,8 +262,11 @@ def level_print(level, search_input):
             case 'Phylum':
                 for indvidual in animal_catalogue:
                     if (animal_catalogue[indvidual].get_phylum() == search_input):
+                        count += 1
+                for indvidual in animal_catalogue:
+                    if (animal_catalogue[indvidual].get_phylum() == search_input):
                         if first:
-                            print('There are _ living members in the {} {}\n'.format(search_input, level))
+                            print('There are {} living members in the {} {}\n'.format(count, search_input, level))
                             print("###########################################")
                             print(animal_catalogue[indvidual])
                             first = False
@@ -270,8 +276,11 @@ def level_print(level, search_input):
             case 'Class':
                 for indvidual in animal_catalogue:
                     if (animal_catalogue[indvidual].get_class() == search_input):
+                        count += 1
+                for indvidual in animal_catalogue:
+                    if (animal_catalogue[indvidual].get_class() == search_input):
                         if first:
-                            print('There are _ living members in the {} {}\n'.format(search_input, level))
+                            print('There are {} living members in the {} {}\n'.format(count, search_input, level))
                             print("###########################################")
                             print(animal_catalogue[indvidual])
                             first = False
@@ -281,8 +290,11 @@ def level_print(level, search_input):
             case 'Order':
                 for indvidual in animal_catalogue:
                     if (animal_catalogue[indvidual].get_order() == search_input):
+                        count += 1
+                for indvidual in animal_catalogue:
+                    if (animal_catalogue[indvidual].get_order() == search_input):
                         if first:
-                            print('There are _ living members in the {} {}\n'.format(search_input, level))
+                            print('There are {} living members in the {} {}\n'.format(count, search_input, level))
                             print("###########################################")
                             print(animal_catalogue[indvidual])
                             first = False
@@ -292,8 +304,11 @@ def level_print(level, search_input):
             case 'Family':
                 for indvidual in animal_catalogue:
                     if (animal_catalogue[indvidual].get_family() == search_input):
+                        count += 1
+                for indvidual in animal_catalogue:
+                    if (animal_catalogue[indvidual].get_family() == search_input):
                         if first:
-                            print('There are _ living members in the {} {}\n'.format(search_input, level))
+                            print('There are {} living members in the {} {}\n'.format(count, search_input, level))
                             print("###########################################")
                             print(animal_catalogue[indvidual])
                             first = False
@@ -303,8 +318,11 @@ def level_print(level, search_input):
             case 'Genus':
                 for indvidual in animal_catalogue:
                     if (animal_catalogue[indvidual].get_genus() == search_input):
+                        count += 1
+                for indvidual in animal_catalogue:
+                    if (animal_catalogue[indvidual].get_genus() == search_input):
                         if first:
-                            print('There are _ living members in the {} {}\n'.format(search_input, level))
+                            print('There are {} living members in the {} {}\n'.format(count, search_input, level))
                             print("###########################################")
                             print(animal_catalogue[indvidual])
                             first = False
@@ -314,8 +332,11 @@ def level_print(level, search_input):
             case 'Common Name':
                 for indvidual in animal_catalogue:
                     if (animal_catalogue[indvidual].get_common_name() == search_input):
+                        count += 1
+                for indvidual in animal_catalogue:
+                    if (animal_catalogue[indvidual].get_common_name() == search_input):
                         if first:
-                            print('There are _ living {} individuals\n'.format(search_input))
+                            print('There are {} living {} individuals\n'.format(count, search_input))
                             print("###########################################")
                             print(animal_catalogue[indvidual])
                             first = False
