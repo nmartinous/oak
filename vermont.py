@@ -44,6 +44,8 @@ class Animal:
         self._genus = g
         self._species = s
         self._diet = diet
+        self._id = animal_id
+        self._conservation_status = 'Not Inputted'
 
         gender_value = random.randint(0,1)
         if gender_value == 0:
@@ -172,7 +174,7 @@ class Animal:
         del self._diet
 
     def __repr__(self):
-        return "\nSpecies Info\n------------\nCommon Name: {}\nKingdom: {}\nPhylum: {}\nClass: {}\nOrder: {}\nFamily: {}\nGenus: {}\nSpecies: {}\nDiet: {}\n\nIndividual Info\n---------------\nGender: {}\n".format(self._commonName, self._kingdom, self._phylum, self._class, self._order, self._family, self._genus, self._genus[0]+ ". " + self._species, self._diet, self._gender)
+        return "\nSpecies Info\n------------\nCommon Name: {}\nKingdom: {}\nPhylum: {}\nClass: {}\nOrder: {}\nFamily: {}\nGenus: {}\nSpecies: {}\nDiet: {}\nConversation Status: {}\n\nIndividual Info\n---------------\nID: {}\nGender: {}\n".format(self._commonName, self._kingdom, self._phylum, self._class, self._order, self._family, self._genus, self._genus[0]+ ". " + self._species, self._diet, self._conservation_status, self._id, self._gender)
 
 # Chordate Phylum
 class Chordata(Animal):
@@ -209,6 +211,7 @@ class Gray_Fox(Urocyon):
 
     def __init__(self, commonName='Gray Fox', k='Animalia', p='Chordata', c='Mammalia', o='Carnivora', f='Canidae', g='Urocyon', s='cinereoargenteus', diet='Omnivore'):
         super().__init__(commonName, k, p, c, o, f, g, s, diet)
+        self._conservation_status = 'Least Concern'
 
 # Lagomorph Order (Rabbits, Hares, & Pikas)
 class Lagomorpha(Mammal):
@@ -233,6 +236,7 @@ class Eastern_Cottontail(Sylvilagus):
     
     def __init__(self, commonName='Eastern Cottontail', k='Animalia', p='Chordata', c='Mammalia', o='Lagomorpha', f='Leporidae', g='Syvilagus', s='floridanus', diet='Herbivore'):
         super().__init__(commonName, k, p, c, o, f, g, s, diet)
+        self._conservation_status = 'Least Concern'
 
 '''
 FUNCTIONS
@@ -343,6 +347,7 @@ def level_print(level, search_input):
                         else:
                             print("###########################################")
                             print(animal_catalogue[indvidual])
+    return count
 
 '''
 TEST CALLS
@@ -356,7 +361,8 @@ eastern_cottontail = Eastern_Cottontail()
 gray_fox = Gray_Fox()
 eastern_cottontail = Eastern_Cottontail()
 gray_fox = Gray_Fox()
-level_print('Common Name','Gray Fox')
+S
 
 # Add way to add new animals easily
 # Add exception handling (use assertion errors to check that values are in cataloguesS)
+# Add Canada Bluegrass as the first plantS
