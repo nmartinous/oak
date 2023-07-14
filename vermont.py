@@ -365,4 +365,5 @@ S
 
 # Add way to add new animals easily
 # Add exception handling (use assertion errors to check that values are in cataloguesS)
+# Add unit testing
 # Add Canada Bluegrass as the first plantS
